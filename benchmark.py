@@ -29,7 +29,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Define the sizes to test
-    sizes = [(10, 10), (100, 100), (1000, 1000), (10000, 10000)]
+    sizes = [(10, 10), (100, 100), (1000, 1000)]
 
     # Arrays to store results
     times_softmax = []
