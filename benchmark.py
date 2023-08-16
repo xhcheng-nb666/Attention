@@ -49,7 +49,7 @@ if __name__ == "__main__":
         logging.info(f'softmax_one time: {time_softmax_one} s')
 
     # Plot the results
-    if args.no_chart:
+    if not args.no_chart:
         plt.figure(figsize=(10, 6))
         plt.plot([np.prod(s) for s in sizes], times_softmax, label='F.softmax')
         plt.plot([np.prod(s) for s in sizes], times_softmax_one, label='softmax_one')
