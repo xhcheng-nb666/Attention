@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Benchmarking Softmax1.')
     # parser.add_argument('--no-chart', action='store_true',
-                        help='Do not display chart')
+    #                   help='Do not display chart')
 
     args = parser.parse_args()
 
