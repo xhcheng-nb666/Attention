@@ -23,8 +23,8 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
     parser = argparse.ArgumentParser(description='Benchmarking Softmax1.')
-    # parser.add_argument('--no-chart', action='store_true',
-    #                   help='Do not display chart')
+    parser.add_argument('--no-chart', action='store_true',
+                       help='Do not display chart')
 
     args = parser.parse_args()
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         logging.info(f'softmax_one time: {time_softmax_one} s')
 
     # Plot the results
-    if not args.no_chart:
+    if args.no_chart:
         plt.figure(figsize=(10, 6))
         plt.plot([np.prod(s) for s in sizes], times_softmax, label='F.softmax')
         plt.plot([np.prod(s) for s in sizes], times_softmax_one, label='softmax_one')
