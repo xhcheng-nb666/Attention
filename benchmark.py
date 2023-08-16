@@ -4,7 +4,6 @@ import argparse
 
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-%matplotlib inline
 # from softmax_one.softmax_one_cupy import softmax_one_cupy as softmax_one
 from softmax_one.softmax_one import softmax_one
 
