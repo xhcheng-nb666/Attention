@@ -23,7 +23,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 
     parser = argparse.ArgumentParser(description='Benchmarking Softmax1.')
-    parser.add_argument('--no-chart', action='store_true',
+    # parser.add_argument('--no-chart', action='store_true',
                         help='Do not display chart')
 
     args = parser.parse_args()
